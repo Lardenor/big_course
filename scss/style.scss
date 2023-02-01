@@ -1,0 +1,26 @@
+@import "../node_modules/modern-normalize/modern-normalize.css";
+@import "./font";
+@import "./main_mixin.scss";
+@import "./variables.scss";
+@import "./nav";
+
+// Page
+@import "./page_scss/home/home.scss";
+
+
+
+
+
+
+
+
+
+// 
+// 
+
+.container{
+    max-width: 1280px;
+    width: 100%;
+    padding: 0 10px;
+}
+

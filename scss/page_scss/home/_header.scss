@@ -1,0 +1,103 @@
+
+
+.header_home {
+  height: 720px;
+  background-image: url("../src/img/Home_page/bg_home.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_block_title {
+  max-width: 780px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header_bt_text {
+  margin-bottom: 35px;
+  text-align: center;
+  h1 {
+    margin-bottom: 10px;
+    @include font_line_white(47px, 400, 120%);
+  }
+  p {
+    @include font_line_white(16px, 400, 180%);
+  }
+}
+
+.header_bt_form {
+  * {
+    border: none;
+  }
+
+  .header_form {
+    box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    max-width: 320px;
+    background: $white;
+    padding: 10px;
+    // display: flex;
+    // flex-direction: column;
+input::placeholder{
+    color: $titlecolor;
+}
+    .form_home {
+      height: 60px;
+      width: 100%;
+      padding-left: 10px;
+    }
+.form_city {
+
+    background-image: url("../../../src/img/Home_page/location.svg");
+    background-repeat: no-repeat;
+    background-position: 5px 50%;
+    border-bottom: 1px solid $titlecolor;
+    padding-left: 25px;
+}
+    .person_btn {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      .form_btn {
+        padding-right: 30px;
+        background-color: $primary;
+        color: $white;
+        width: 170px;
+        height: 60px;
+        border-radius: 10px;
+        background-image: url("../../../src/img/Home_page/search.svg");
+        background-repeat: no-repeat;
+        background-position: 92% ;
+        cursor: pointer;
+        &:active{
+            transform: scale(95%);
+        }
+      }
+
+      .form_person {
+        width: 75px;
+      }
+    }
+  }
+}
+
+.form_date {
+  border-bottom: 1px solid $titlecolor;
+  margin: 10px 0;
+}
+.form_person {
+  border-bottom: 1px solid $titlecolor;
+}

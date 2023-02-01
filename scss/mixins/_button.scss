@@ -1,0 +1,22 @@
+@mixin btn_discover{
+    width: 126px;
+    height: 49px;
+    background-color: $primary;
+    border-radius: 8px;
+    font-family:Poppins;
+    font-weight: 700;
+}
+@mixin btn_service{
+    width: 119px;
+        height: 39px;
+    background-color: $primary;
+    border-radius: 15px;
+    font-family: Poppins;
+}
+@mixin btn_service_down {
+    width: 127px;
+        height: 39px;
+    background-color: $primary;
+    border-radius: 8px;
+    font-family: Poppins;
+}

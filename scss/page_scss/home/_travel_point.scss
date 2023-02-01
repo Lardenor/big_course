@@ -1,0 +1,76 @@
+.travel_point {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.left_travel {}
+// !
+// !
+// !
+// !
+// !
+// !
+// !
+// ! right vlock
+.right_travel {   
+    .tp_header{
+        @include font_line_secondary (16px, 700, 180%);
+        margin-bottom: 10px;
+        display: block
+        
+    }   
+    h2{
+    @include font_line_title (28px, 700, 120%);
+    margin-bottom: 10px;
+    }
+    p{
+    @include font_line_title (16px, 400, 180%);
+        margin-bottom: 20px;
+    }
+}
+
+.statistic_tp {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.statistic_tp_top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.number_tp {
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    &:first-child {
+            margin-bottom: 20px;
+    }
+  
+}
+
+.number_item {
+    @include font_line_secondary (27px, 700, 120%);
+}
+
+.text_item {
+    @include font_line_title (16px, 400, 100%);
+}
+
+.statistic_tp_bot {
+    @extend .statistic_tp_top
+    
+}
+// ! right vlock
+// !
+// !
+// !
+// !
+// !
+// !
+// !

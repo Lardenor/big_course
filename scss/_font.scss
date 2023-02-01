@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Poppins';
+    
+}
+@mixin font($size,$weight){
+    font-family: 'Poppins';
+    font-size: $size;
+    font-weight: $weight;
+}
+@mixin font_line ($size, $weight,$height) {
+    font-family: 'Poppins';
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+}
+@mixin font_line_white ($size, $weight, $height) {
+    font-family: 'Poppins';
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+    color: $white;
+}
+@mixin font_line_title ($size, $weight, $height) {
+    font-family: 'Poppins';
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+    color: $titlecolor;
+}
+@mixin font_line_secondary ($size, $weight, $height) {
+    font-family: 'Poppins';
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+    color: $secondary;
+}
