@@ -1,5 +1,3 @@
-
-
 .header_home {
   height: 720px;
   background-image: url("../src/img/Home_page/bg_home.jpg");
@@ -18,7 +16,7 @@
 }
 
 .header_block_title {
-  max-width: 780px;
+  width: 100%;
   margin-top: 40px;
   display: flex;
   flex-direction: column;
@@ -26,6 +24,8 @@
 }
 
 .header_bt_text {
+  max-width: 780px;
+  width: 100%;
   margin-bottom: 10px;
   text-align: center;
   h1 {
@@ -41,31 +41,30 @@
   * {
     border: none;
   }
-
+  max-width: 320px;
   .header_form {
     box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
-    max-width: 320px;
+
     background: $white;
     padding: 10px;
     // display: flex;
     // flex-direction: column;
-input::placeholder{
-    color: $titlecolor;
-}
+    input::placeholder {
+      color: $titlecolor;
+    }
     .form_home {
       height: 60px;
       width: 100%;
       padding-left: 10px;
     }
-.form_city {
-
-    background-image: url("../../../src/img/Home_page/location.svg");
-    background-repeat: no-repeat;
-    background-position: 5px 50%;
-    border-bottom: 1px solid $titlecolor;
-    padding-left: 25px;
-}
+    .form_city {
+      background-image: url("../../../src/img/Home_page/location.svg");
+      background-repeat: no-repeat;
+      background-position: 5px 50%;
+      border-bottom: 1px solid $titlecolor;
+      padding-left: 25px;
+    }
     .person_btn {
       display: flex;
       width: 100%;
@@ -80,10 +79,10 @@ input::placeholder{
         border-radius: 10px;
         background-image: url("../../../src/img/Home_page/search.svg");
         background-repeat: no-repeat;
-        background-position: 92% ;
+        background-position: 92%;
         cursor: pointer;
-        &:active{
-            transform: scale(95%);
+        &:active {
+          transform: scale(95%);
         }
       }
 
@@ -101,7 +100,85 @@ input::placeholder{
 .form_person {
   border-bottom: 1px solid $titlecolor;
 }
-@media screen and (min-width:768px) {
+@media (min-width: 768px) {
   .header_bt_text {
-      margin-bottom: 35px;}
+    margin-bottom: 35px;
+  }
+// 
+// 
+  .header_bt_form {
+    * {
+      border: none;
+    }
+max-width: 780px;
+width: 100%;
+    .header_form {
+   
+      
+      background: $white;
+      padding: 10px;
+
+      display: flex;
+     
+      input::placeholder {
+        color: $titlecolor;
+      }
+
+      .form_home {
+        height: 50px;
+        width: 100%;
+        padding-left: 10px;
+      }
+
+      .form_city {
+        background-image: url("../../../src/img/Home_page/location.svg");
+        background-repeat: no-repeat;
+        background-position: 5px 50%;
+        border-bottom: none;
+        padding-left: 25px;
+      }
+
+      .person_btn {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+
+        .form_btn {
+          padding-right: 30px;
+          background-color: $primary;
+          color: $white;
+          width: 170px;
+          height: 50px;
+          border-radius: 10px;
+          background-image: url("../../../src/img/Home_page/search.svg");
+          background-repeat: no-repeat;
+          background-position: 92%;
+          cursor: pointer;
+margin-left: 5px;
+          &:active {
+            transform: scale(95%);
+          }
+        }
+
+        .form_person {
+          width: 140px;
+          border-bottom: 0;
+          
+          border-left: 1px solid $titlecolor;
+        }
+               
+      }
+    }
+  }
+
+  .form_date {
+    border-left: 1px solid $titlecolor;
+   max-width: 180px;
+    margin:0;
+  }
+
+  .form_person {
+    
+  }
 }
