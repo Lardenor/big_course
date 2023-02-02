@@ -3,7 +3,7 @@
 @import "./main_mixin.scss";
 @import "./variables.scss";
 @import "./nav";
-
+@import "./footer";
 // Page
 @import "./page_scss/home/home.scss";
 
@@ -17,17 +17,34 @@
 
 // 
 // 
+
 a{
     text-decoration: none;
+}
+ul{
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+.dp_center {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+
 }
 .container{
     max-width: 1200px;
     width: 100%;
     padding: 0 10px;
 }
-.dp_center{
+
+.footer {
+background-color: $secondary;
+margin-bottom: 0;
+
+}
+.footer_container{
     display: flex;
-        justify-content: center;
-        margin-bottom: 100px;
-        
+    justify-content: space-between;
 }
