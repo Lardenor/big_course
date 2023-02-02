@@ -1,0 +1,100 @@
+.destination{
+    display: flex;
+    flex-direction: column;
+    
+}
+.destination_upper_text{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.tp_header{
+    @extend %tp_header_span;
+}
+.tp_h2{
+    @extend %tp_h2_text;
+}
+
+.container_card {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+width: 100%;
+height: 100%;
+gap: 20px;
+
+
+justify-items: center;
+
+}
+
+.card {
+    width: 100%;
+    max-width: 380px;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+   
+box-shadow: 1px 2px 12px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+.card_image{
+    max-width: 360px;
+    width: 100%;
+    
+    height: 227px;
+    margin-top: 10px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.card_link {
+max-width: 360px;
+    width: 100%;
+    font-weight: 700;
+        font-size: 19px;
+        line-height: 180%;
+        a{
+            color: $titlecolor;
+        }
+}
+
+.card_bottom {max-width: 360px;
+    width: 100%;
+margin-bottom: 20px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+}
+.arrow{
+    display: flex;
+    align-items: center;
+}
+.notarrow {
+@include font_line_secondary (16px, 700, 180%);
+}
+
+  .arrwo_span  {
+    padding-left: 10px;
+    @include font_line_title (14px, 400, 180%);
+  }
+// 
+// 
+@media screen and (min-width: 768px) {
+   .container_card{
+grid-template-columns: repeat(2, 1fr);
+   } 
+}
+@media screen and (min-width: 1024px) {
+    .container_card {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@for $i from 1 through 6 {
+    .card_image_#{$i} {
+        background-image: url("../../../src/img/Home_page/Discover_your_love/#{$i}.jpg");
+    }
+}

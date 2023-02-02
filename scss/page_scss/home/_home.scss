@@ -1,2 +1,20 @@
 @import "./header";
 @import "./travel_point";
+@import "./destination.scss";
+
+%tp_header_span {
+    @include font_line_secondary (16px, 700, 180%);
+    margin-bottom: 10px;
+    display: block
+}
+
+%tp_h2_text {
+    @include font_line_title (28px, 700, 120%);
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+%tp_p_text {
+    @include font_line_title (16px, 400, 180%);
+    margin-bottom: 20px;
+}

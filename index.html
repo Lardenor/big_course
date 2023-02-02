@@ -17,6 +17,8 @@
       {{>nav}}
    {{>home/header}}
    {{>home/travel_point}}
+{{>home/destination}}
+  
     </div>
 
 
@@ -74,28 +76,15 @@
 
     <script type="module" src="/main.js"></script>
 <script>
-  const nav = document.querySelector('nav');
 
-    // Get the current scroll position
-    let currentScrollPos = window.pageYOffset;
-
-    // Listen for scroll events
-    window.addEventListener("scroll", function () {
-      // Get the new scroll position
-      let newScrollPos = window.pageYOffset;
-
-      // If the new scroll position is greater than the current scroll position
-      if (newScrollPos > currentScrollPos) {
-        // Add the "scrolled" class to the navigation bar
+  window.onscroll = function () {
+      var nav = document.querySelector("nav");
+      if (window.pageYOffset > 0) {
         nav.classList.add("scrolled");
       } else {
-        // Remove the "scrolled" class from the navigation bar
         nav.classList.remove("scrolled");
       }
-
-      // Update the current scroll position
-      currentScrollPos = newScrollPos;
-    });
+    };
 </script>
 
   </body>

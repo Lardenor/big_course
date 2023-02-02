@@ -17,10 +17,17 @@
 
 // 
 // 
-
+a{
+    text-decoration: none;
+}
 .container{
-    max-width: 1280px;
+    max-width: 1200px;
     width: 100%;
     padding: 0 10px;
 }
-
+.dp_center{
+    display: flex;
+        justify-content: center;
+        margin-bottom: 100px;
+        
+}
