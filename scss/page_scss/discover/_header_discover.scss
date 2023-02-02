@@ -1,0 +1,69 @@
+.container_for_nav{
+    nav{
+        background-color: $white;
+    }
+    nav .container_nav .logo a {
+            color: $secondary;
+        }
+    
+        nav .container_nav ul li a {
+            color: $titlecolor;
+        }
+        nav .container_nav ul li a.active{
+            background: none;
+        }
+        nav .container_nav ul li a.active_1,
+        nav .container_nav ul li a:hover {
+            color: $primary;
+           
+        }
+    
+        nav .container_nav .menu-btn i {
+            
+            color: $titlecolor;
+            
+        }
+    
+  
+    
+        select {
+
+            background-image: url('../src/img/Home_page/world_black.svg');
+
+            color: $titlecolor;
+            cursor: pointer;
+    
+           
+        }
+}
+
+
+
+@media (max-width: 1024px){
+    .container_for_nav{
+        nav .container_nav ul {
+
+                background: $white;
+
+            }
+        
+            nav .container_nav ul li a.active_1,
+            nav .container_nav ul li a:hover {
+                background: $black;
+                color: $white;
+            }
+    }
+}
+.block_nav {
+    height: 80px;
+
+}
+
+.header_bg {
+    height: 250px;
+    background-image: url("../../../src/img/Discover_page/main_discover.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position-y: 70%;
+  
+}
