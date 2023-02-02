@@ -1,6 +1,7 @@
 @import "./header";
 @import "./travel_point";
 @import "./destination.scss";
+@import "./testimonial.scss";
 
 %tp_header_span {
     @include font_line_secondary (16px, 700, 180%);
