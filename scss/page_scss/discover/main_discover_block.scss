@@ -4,7 +4,8 @@
 }
 
 .container_for_discover_main {
-
+display: grid;
+place-items: center;
 }
 
 .discover_left_main {
@@ -33,6 +34,7 @@ font-weight: 700;
     background-position: center;
     height: 300px;
     background-size: cover;
+    
 }
 .location_sign_lake {
     display: flex;
@@ -67,6 +69,7 @@ font-weight: 700;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    align-items: center;
 
 }
 .bali_img{
@@ -81,3 +84,128 @@ border-radius: 5px;
  .bali_img_2{
     background-image: url("../../../src/img/Discover_page/bali_2_discover.jpg");
  }
+ .last_paragraph{
+    margin-bottom: 50px;
+ }
+// rightside
+.dicover_right_main {
+    display: grid;
+    grid-template-columns: minmax(300px,380px);
+}
+
+.map {
+    iframe{
+        width: 100%;
+        height: 213px;
+    }
+    margin-bottom: 60px;
+}
+
+.side_bar_discover {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 100px;
+}
+
+.header_sidebar {
+    display: flex;
+    justify-content: space-between;
+    // margin-bottom: 10px;
+    .text_sidebar_1 {
+        @include font_line_title(19px, 400,180%);
+    }
+    
+        .text_sidebar_2 {
+            a{
+@include font (19px, 400, $primary);
+            }
+           
+        }
+}
+
+
+
+.card_item_side_bar {
+   height: 255px;
+
+   background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../../src/img/Discover_page/right_side_discover.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding: 20px 10px;
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: flex-start;
+p{
+    text-shadow: $black 1px 0 10px;
+    margin: 0;
+@include font_line_white(19px,700,180%)}
+span{
+    text-shadow: $black 1px 0 10px;
+    @include font_line_white(12px, 700, 180%)
+}
+button{
+    
+@include btn_discover;
+}
+}
+// *
+// *
+// *
+// *
+// *
+// *
+@media (min-width: 768px){
+.container_bali_img {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+.container_for_lake_img{
+    display: flex;
+    justify-content: center;
+   
+}
+
+
+
+}
+// *
+// *
+// *
+// *
+// *
+// !
+// !
+// !
+// !
+// !
+@media (min-width: 1024px){
+    .float{
+        padding-right: 30px;
+    }
+    .container_for_discover_main{
+        margin-bottom: 100px;
+    }
+.container_for_discover_main{
+    grid-template-columns: 2fr 1fr;
+    column-gap: 20px;
+}
+.last_paragraph {
+    margin-bottom: 0;
+}
+
+.side_bar_discover{
+margin-bottom: 0;
+}
+.discover_right_main{
+    
+    grid-template-columns: 380px;
+}
+}
+// !
+// !
+// !
+// !

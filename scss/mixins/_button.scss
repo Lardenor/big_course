@@ -5,6 +5,15 @@
     border-radius: 8px;
     font-family:Poppins;
     font-weight: 700;
+    border: 0;
+    color: $white;
+    cursor: pointer;
+    &:hover {
+            background-color: rgb(66, 66, 66);
+        }
+&:active{
+    transform: scale(95%);
+}
 }
 @mixin btn_service{
     width: 119px;
