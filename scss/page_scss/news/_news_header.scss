@@ -1,0 +1,37 @@
+.news {
+    nav .container_nav ul li a.active_1 {
+        color: $titlecolor;
+    }
+
+    nav .container_nav ul li a.active_3,
+    nav .container_nav ul li a:hover {
+        color: $primary;
+    }
+}
+
+
+
+
+
+@media (max-width: 1024px) {
+    .news {
+        nav .container_nav ul li a.active_1 {
+            background: transparent;
+        }
+
+        nav .container_nav ul li a.active_3,
+        nav .container_nav ul li a:hover {
+            background: $black;
+            color: $white;
+        }
+    }
+}
+
+.bg_header_news {
+    background-image: url("../../../src/img/news_page/header_news.jpg");
+
+    
+}
+.news_header{
+    margin-bottom: 100px;
+}

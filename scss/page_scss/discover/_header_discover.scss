@@ -75,9 +75,12 @@ padding-bottom: 50px;
     display: flex;
     justify-content: center;
     height: 250px;
-    background-image: url("../../../src/img/Discover_page/main_discover.jpg");
+    
     background-repeat: no-repeat;
     background-size:cover;
     background-position-y: 60%;
   
+}
+.header_bg_discover{
+background-image: url("../../../src/img/Discover_page/main_discover.jpg");
 }

@@ -1,0 +1,111 @@
+// .service_nav {
+  
+
+ 
+
+ 
+
+//     // nav .container_nav ul li a.active {
+//     //     background: none;
+//     // }
+
+//     nav .container_nav ul li a.active_1 {
+//         color: $titlecolor;
+//     }
+
+//     nav .container_nav ul li a.active_2,
+//     nav .container_nav ul li a:hover {
+//         color: $primary;
+
+//     }
+
+//     nav .container_nav .menu-btn i {
+
+//         color: $titlecolor;
+
+//     }
+
+
+
+//     select {
+
+//         background-image: url('../src/img/Home_page/world_black.svg');
+
+//         color: $titlecolor;
+//         cursor: pointer;
+
+
+//     }
+// }
+
+.service_header {
+    margin-bottom: 100px;
+}
+
+.header_service {
+    justify-content: flex-start;
+    align-items: flex-end;
+
+    .header_span {
+        @include font_line_white(33px, 700, 120%);
+
+        padding-bottom: 50px;
+    }
+}
+
+
+
+// @media screen and (max-width: 1024px) {
+//     .container_for_nav {
+//         nav .container_nav ul {
+
+//             background: $white;
+
+//         }
+
+//         nav .container_nav ul li a.active_1 {
+//             background: transparent;
+//         }
+
+//         nav .container_nav ul li a.active_2,
+//         nav .container_nav ul li a:hover {
+//             background: $black;
+//             color: $white;
+//         }
+//     }
+// }
+.service_nav {
+    nav .container_nav ul li a.active_1 {
+        color: $titlecolor;
+    }
+
+    nav .container_nav ul li a.active_2,
+    nav .container_nav ul li a:hover {
+        color: $primary;
+    }
+}
+
+
+
+
+
+@media (max-width: 1024px) {
+    .service_nav {
+        nav .container_nav ul li a.active_1 {
+            background: transparent;
+        }
+
+        nav .container_nav ul li a.active_2,
+        nav .container_nav ul li a:hover {
+            background: $black;
+            color: $white;
+        }
+    }
+}
+
+.header_bg_service {
+
+    background-image: url("../../../src/img/Service_page/Header_service.jpg");
+
+
+}

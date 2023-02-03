@@ -1,0 +1,43 @@
+
+
+.about_travel_cont {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about_text {
+    h3{
+@include font_line_title(28px, 700, 180%);
+
+            
+    }
+    p{
+    
+@include font_line_title(16px, 400, 180%);
+               
+    }
+}
+
+.about_img {
+    img{
+        max-width: 380px;
+        width: 100%;
+    }
+    margin-top: 100px;
+}
+@media screen and (min-width: 768px) {
+.about_travel_cont {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+        .about_img {
+            margin-top: 0;
+          img{
+            width: 380px;
+          }
+        }
+}

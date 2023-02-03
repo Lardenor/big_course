@@ -21,11 +21,23 @@
     background-color: $primary;
     border-radius: 15px;
     font-family: Poppins;
+    border: none;
+    cursor: pointer;
 }
 @mixin btn_service_down {
     width: 127px;
         height: 39px;
     background-color: $primary;
     border-radius: 8px;
+    font-family: Poppins;
+    border: none;
+    cursor: pointer;
+}
+@mixin btn_place_service {
+    width: 127px;
+    height: 39px;
+    background: none;
+    border: 2px solid $primary;
+    color: $white;
     font-family: Poppins;
 }

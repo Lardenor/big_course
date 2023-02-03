@@ -1,0 +1,34 @@
+.about_us {
+  nav .container_nav ul li a.active_1 {
+    color: $titlecolor;
+  }
+  nav .container_nav ul li a.active_4,
+  nav .container_nav ul li a:hover {
+    color: $primary;
+  }
+}
+
+.about_us_header{
+  margin-bottom: 100px;
+}
+
+
+
+@media (max-width: 1024px) {
+  .about_us {
+    nav .container_nav ul li a.active_1 {
+      background: transparent;
+    }
+    nav .container_nav ul li a.active_4,
+    nav .container_nav ul li a:hover {
+      background: $black;
+      color: $white;
+    }
+  }
+}
+
+.header_bg_about_us {
+  background-image: url("../../../src/img/aboutus_page/bg_aboutus.jpg");
+
+  background-position-y: 55%;
+}

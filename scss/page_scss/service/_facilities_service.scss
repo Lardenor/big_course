@@ -1,0 +1,91 @@
+.facelities_bg {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../../src/img/Service_page/facilities/facilities_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20%;
+}
+
+.facilities_service {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    padding: 20px 0;
+}
+
+.left_block_facilities {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+    span {
+        @include font_line(48px, 700, 120%);
+        color: $white;
+    }
+
+    p {
+        color: $white;
+        @include font_line(16px, 400, 180%);
+    }
+
+    button {
+        @include btn_discover;
+        color: $white;
+    }
+}
+
+.right_block_facilities {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    .img_block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 140px;
+        height: 180px;
+        background: $white;
+        border-radius: 15px;
+
+        span {
+            @include font_line_title(40px, 700, 120%);
+        }
+
+        p {
+            @include font_line_title (16px, 500, 180%);
+            margin: 0;
+        }
+    }
+}
+
+
+@media screen and (min-width:768px) {
+
+    .facilities_service {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 87px 0;
+
+        .left_block_facilities {
+            max-width: 580px;
+        }
+
+        .right_block_facilities {
+            width: 100%;
+            display: flex;
+
+            .img_block {
+                width: 280px;
+            }
+        }
+    }
+}
