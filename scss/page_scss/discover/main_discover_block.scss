@@ -1,0 +1,83 @@
+.main_discover_section{
+    display: flex;
+    justify-content: center;
+}
+
+.container_for_discover_main {
+
+}
+
+.discover_left_main {
+
+p {
+        line-height: 180%;
+    }
+}
+
+.upper_discover_text {
+
+}
+.float{
+padding-right: 70px;
+float: left;
+
+font-size: 68px;
+font-weight: 700;
+
+
+}
+.discover_lake_img {
+    max-width: 780px;
+    width: 100%;
+    background-image: url("../../../src/img/Discover_page/discover_lake.jpg");
+    background-position: center;
+    height: 300px;
+    background-size: cover;
+}
+.location_sign_lake {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 60px;
+
+    span {
+        display: block;
+    }
+}
+.sign_for_lake {
+    h3{
+        a{
+            @include font_line_title (27px,400,120%)
+        }
+    }
+        
+}
+.discove_location_bali{
+    display: flex;
+    align-items: center;
+   span{
+    &:nth-child(2) {
+            padding-left: 10px;
+            @include font_line_title (16px, 400, 180%)
+        }
+   }
+  
+}
+.container_bali_img{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.bali_img{
+max-width: 380px;
+width: 100%;
+height: 280px;
+border-radius: 5px;
+}
+.bali_img_1{
+    background-image: url("../../../src/img/Discover_page/bali_1_discover.jpg");
+}
+ .bali_img_2{
+    background-image: url("../../../src/img/Discover_page/bali_2_discover.jpg");
+ }

@@ -36,8 +36,23 @@
            
         }
 }
+.discover_header{
+    margin-bottom: 50px;
+}
+.header_discover{
+    justify-content: flex-start;
+    align-items: flex-end;
+.header_span {
+        @include font_line_white(33px, 700, 120%);
+        
+padding-bottom: 50px;
+    }
+}
 
+.block_nav {
+    height: 80px;
 
+}
 
 @media (max-width: 1024px){
     .container_for_nav{
@@ -54,16 +69,15 @@
             }
     }
 }
-.block_nav {
-    height: 80px;
 
-}
 
 .header_bg {
+    display: flex;
+    justify-content: center;
     height: 250px;
     background-image: url("../../../src/img/Discover_page/main_discover.jpg");
     background-repeat: no-repeat;
     background-size:cover;
-    background-position-y: 70%;
+    background-position-y: 60%;
   
 }
